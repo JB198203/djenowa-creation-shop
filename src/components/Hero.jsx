@@ -2,67 +2,78 @@ export default function Hero() {
   return (
     <section
       id="accueil"
-      className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-sand"
+      className="relative grid min-h-screen w-full grid-cols-1 overflow-hidden bg-ink md:grid-cols-2"
     >
-      {/* Ambient background texture */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.06]"
+        className="pointer-events-none absolute inset-0 opacity-[0.05]"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 1px 1px, #1A1A1A 1px, transparent 0)",
+            "radial-gradient(circle at 1px 1px, #C9A227 1px, transparent 0)",
           backgroundSize: "28px 28px",
         }}
         aria-hidden="true"
       />
-      <div
-        className="pointer-events-none absolute -top-32 right-[-10%] h-[32rem] w-[32rem] rounded-full bg-gradient-to-br from-gold/20 via-gold-light/10 to-transparent blur-3xl"
-        aria-hidden="true"
-      />
 
-      <div className="relative mx-auto flex max-w-5xl flex-col items-center px-6 pt-32 pb-24 text-center md:pt-24">
+      <div className="relative z-10 flex flex-col justify-center px-6 pt-32 pb-16 md:px-12 lg:px-20 md:py-24">
         <p className="mb-6 text-xs uppercase tracking-widest2 text-gold">
           Bijoux artisanaux — Édition singulière
         </p>
 
-        <h1 className="font-display text-4xl leading-[1.1] text-charcoal sm:text-5xl md:text-7xl">
+        <h1 className="font-display text-4xl leading-[1.1] text-ivory sm:text-5xl lg:text-6xl">
           Djenowa Créations
-          <span className="mt-2 block italic text-charcoal/80">
+          <span className="text-gold-gradient mt-2 block italic">
             L'Art du Bijou Singulier
           </span>
         </h1>
 
-        <p className="mt-8 max-w-xl text-balance text-base leading-relaxed text-charcoal/60 md:text-lg">
+        <p className="mt-8 max-w-md text-balance text-base leading-relaxed text-ivory/60 md:text-lg">
           Des pièces façonnées en acier inoxydable, pensées pour durer et se
           transformer. Chaque bijou 2-en-1 s'adapte à votre allure —
           du collier à la boucle d'oreille — en un seul geste.
         </p>
 
-        <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row">
+        <div className="mt-12 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
           <a
             href="#collections"
-            className="group relative overflow-hidden bg-charcoal px-10 py-4 text-xs uppercase tracking-widest2 text-cream transition-all duration-500 ease-in-out hover:bg-gold"
+            className="group relative overflow-hidden bg-gold px-10 py-4 text-xs uppercase tracking-widest2 text-ink transition-all duration-500 ease-in-out hover:bg-gold-light"
           >
             <span className="relative z-10">Explorer la collection</span>
           </a>
           <a
             href="#univers"
-            className="px-10 py-4 text-xs uppercase tracking-widest2 text-charcoal/70 transition-all duration-500 ease-in-out hover:text-gold"
+            className="px-2 py-4 text-xs uppercase tracking-widest2 text-ivory/60 transition-all duration-500 ease-in-out hover:text-gold sm:px-10"
           >
             Notre univers
           </a>
         </div>
+
+        <a
+          href="#collections"
+          className="mt-16 hidden items-center gap-3 text-ivory/30 transition-colors duration-500 ease-in-out hover:text-gold md:flex"
+          aria-label="Défiler vers le bas"
+        >
+          <span className="h-px w-12 bg-current" />
+          <span className="text-[10px] uppercase tracking-widest2">
+            Scroll
+          </span>
+        </a>
       </div>
 
-      <a
-        href="#collections"
-        className="absolute bottom-10 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-charcoal/40 transition-colors duration-500 ease-in-out hover:text-gold md:flex"
-        aria-label="Défiler vers le bas"
-      >
-        <span className="h-12 w-px bg-current" />
-        <span className="text-[10px] uppercase tracking-widest2">
-          Scroll
-        </span>
-      </a>
+      <div className="relative h-[55vh] md:h-auto">
+        <img
+          src="/images/hero-editorial.jpg"
+          alt="Bijou Djenowa Créations — harnais d'épaule et collier en acier, porté"
+          className="h-full w-full object-cover object-top"
+        />
+        <div
+          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent md:bg-gradient-to-r md:from-ink/60 md:via-transparent md:to-black/20"
+          aria-hidden="true"
+        />
+        <div
+          className="pointer-events-none absolute inset-y-0 left-0 hidden w-px bg-gradient-to-b from-transparent via-gold/40 to-transparent md:block"
+          aria-hidden="true"
+        />
+      </div>
     </section>
   );
 }

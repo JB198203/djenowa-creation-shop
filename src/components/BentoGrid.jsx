@@ -1,10 +1,12 @@
+import Reveal from "./Reveal.jsx";
+
 const CONCEPTS = [
   {
     key: "duo",
     title: "Le Bijou 2-en-1",
     description:
       "Boucles d'oreilles détachables qui se transforment en collier — une seule pièce, deux façons de la porter.",
-    gradient: "from-charcoal via-[#2b2620] to-gold/40",
+    image: "/images/bento-duo.jpg",
     span: "md:row-span-2",
     tag: "Innovation",
   },
@@ -13,7 +15,7 @@ const CONCEPTS = [
     title: "L'Arbre de Vie",
     description:
       "Gravures symboliques ciselées à la main, racines et branches comme signature de chaque création.",
-    gradient: "from-gold-light via-gold/70 to-charcoal/30",
+    image: "/images/bento-arbre.jpg",
     span: "",
     tag: "Symbolique",
   },
@@ -22,30 +24,33 @@ const CONCEPTS = [
     title: "L'Acier Inoxydable",
     description:
       "Un matériau noble, hypoallergénique et inaltérable — pensé pour accompagner chaque instant de vie.",
-    gradient: "from-sand via-gold-light/60 to-charcoal/20",
+    image: "/images/bento-acier.jpg",
     span: "",
     tag: "Matière",
   },
 ];
 
-function BentoCard({ title, description, gradient, span, tag }) {
+function BentoCard({ title, description, image, tag }) {
   return (
-    <article
-      className={`group relative flex min-h-[280px] flex-col justify-end overflow-hidden rounded-sm p-8 md:min-h-[320px] md:p-10 ${span}`}
-    >
+    <article className="group relative flex h-full min-h-[280px] flex-col justify-end overflow-hidden rounded-sm border border-gold/0 p-8 transition-colors duration-500 ease-in-out hover:border-gold/30 md:min-h-[320px] md:p-10">
+      <img
+        src={image}
+        alt={title}
+        loading="lazy"
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+      />
       <div
-        className={`absolute inset-0 bg-gradient-to-br ${gradient} transition-transform duration-500 ease-in-out group-hover:scale-105`}
+        className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/10"
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-charcoal/10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
 
-      <span className="relative z-10 mb-4 w-fit border border-cream/40 px-3 py-1 text-[10px] uppercase tracking-widest2 text-cream/90 backdrop-blur-sm">
+      <span className="relative z-10 mb-4 w-fit border border-gold/40 px-3 py-1 text-[10px] uppercase tracking-widest2 text-gold">
         {tag}
       </span>
-      <h3 className="relative z-10 font-display text-2xl text-cream md:text-3xl">
+      <h3 className="relative z-10 font-display text-2xl text-ivory md:text-3xl">
         {title}
       </h3>
-      <p className="relative z-10 mt-3 max-w-sm text-sm leading-relaxed text-cream/80">
+      <p className="relative z-10 mt-3 max-w-sm text-sm leading-relaxed text-ivory/70">
         {description}
       </p>
     </article>
@@ -54,22 +59,28 @@ function BentoCard({ title, description, gradient, span, tag }) {
 
 export default function BentoGrid() {
   return (
-    <section id="univers" className="bg-cream px-6 py-24 md:px-12 md:py-32">
+    <section id="univers" className="bg-ink px-6 py-24 md:px-12 md:py-32">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-16 max-w-xl">
+        <Reveal className="mb-16 max-w-xl">
           <p className="mb-4 text-xs uppercase tracking-widest2 text-gold">
             Notre univers
           </p>
-          <h2 className="font-display text-3xl text-charcoal md:text-5xl">
+          <h2 className="font-display text-3xl text-ivory md:text-5xl">
             Trois idées, une signature
           </h2>
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <BentoCard {...CONCEPTS[0]} />
+          <Reveal delay={0} className="md:row-span-2">
+            <BentoCard {...CONCEPTS[0]} />
+          </Reveal>
           <div className="grid grid-cols-1 gap-6">
-            <BentoCard {...CONCEPTS[1]} />
-            <BentoCard {...CONCEPTS[2]} />
+            <Reveal delay={150}>
+              <BentoCard {...CONCEPTS[1]} />
+            </Reveal>
+            <Reveal delay={300}>
+              <BentoCard {...CONCEPTS[2]} />
+            </Reveal>
           </div>
         </div>
       </div>

@@ -4,11 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        sand: "#F5F2EB",
-        cream: "#FAF9F6",
-        charcoal: "#1A1A1A",
-        gold: "#B08D57",
-        "gold-light": "#D4B896",
+        ink: "#0A0A0A",
+        "ink-soft": "#141310",
+        black: "#000000",
+        ivory: "#F3EEE3",
+        gold: "#C9A227",
+        "gold-light": "#E7D19A",
+        "gold-deep": "#8B6914",
       },
       fontFamily: {
         display: ["\"Playfair Display\"", "serif"],
