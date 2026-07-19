@@ -4,7 +4,7 @@ const CONCEPTS = [
     title: "Le Bijou 2-en-1",
     description:
       "Boucles d'oreilles détachables qui se transforment en collier — une seule pièce, deux façons de la porter.",
-    gradient: "from-charcoal via-[#2b2620] to-gold/40",
+    image: "/images/bento-duo.jpg",
     span: "md:row-span-2",
     tag: "Innovation",
   },
@@ -13,7 +13,7 @@ const CONCEPTS = [
     title: "L'Arbre de Vie",
     description:
       "Gravures symboliques ciselées à la main, racines et branches comme signature de chaque création.",
-    gradient: "from-gold-light via-gold/70 to-charcoal/30",
+    image: "/images/bento-arbre.jpg",
     span: "",
     tag: "Symbolique",
   },
@@ -22,22 +22,28 @@ const CONCEPTS = [
     title: "L'Acier Inoxydable",
     description:
       "Un matériau noble, hypoallergénique et inaltérable — pensé pour accompagner chaque instant de vie.",
-    gradient: "from-sand via-gold-light/60 to-charcoal/20",
+    image: "/images/bento-acier.jpg",
     span: "",
     tag: "Matière",
   },
 ];
 
-function BentoCard({ title, description, gradient, span, tag }) {
+function BentoCard({ title, description, image, span, tag }) {
   return (
     <article
       className={`group relative flex min-h-[280px] flex-col justify-end overflow-hidden rounded-sm p-8 md:min-h-[320px] md:p-10 ${span}`}
     >
+      <img
+        src={image}
+        alt={title}
+        loading="lazy"
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+      />
       <div
-        className={`absolute inset-0 bg-gradient-to-br ${gradient} transition-transform duration-500 ease-in-out group-hover:scale-105`}
+        className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/20 to-transparent"
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-charcoal/10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
+      <div className="absolute inset-0 bg-charcoal/0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:bg-charcoal/10 group-hover:opacity-100" />
 
       <span className="relative z-10 mb-4 w-fit border border-cream/40 px-3 py-1 text-[10px] uppercase tracking-widest2 text-cream/90 backdrop-blur-sm">
         {tag}

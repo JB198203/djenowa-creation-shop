@@ -3,45 +3,45 @@ import { useRef } from "react";
 const PRODUCTS = [
   {
     id: "p1",
-    name: "Collier Racine",
-    category: "Arbre de Vie",
-    price: "89 €",
-    gradient: "from-charcoal to-[#3a3227]",
+    name: "Bracelet Lave & Cauri",
+    category: "Acier Inoxydable",
+    price: "68 €",
+    image: "/images/product-bracelet-lave.jpg",
   },
   {
     id: "p2",
-    name: "Duo Célestine",
+    name: "Épaulette Cascade",
     category: "Bijou 2-en-1",
     price: "129 €",
-    gradient: "from-gold to-gold-light",
+    image: "/images/product-epaulette-cascade.jpg",
   },
   {
     id: "p3",
-    name: "Bracelet Acier Brossé",
-    category: "Acier Inoxydable",
-    price: "64 €",
-    gradient: "from-sand to-gold-light/70",
+    name: "Masque Chaîne Dorée",
+    category: "Bijou 2-en-1",
+    price: "89 €",
+    image: "/images/product-masque-chaine.jpg",
   },
   {
     id: "p4",
-    name: "Boucles Feuillage",
+    name: "Diadème Frontal",
     category: "Arbre de Vie",
-    price: "72 €",
-    gradient: "from-[#2b2620] to-gold/50",
+    price: "139 €",
+    image: "/images/product-diademe-frontal.jpg",
   },
   {
     id: "p5",
-    name: "Duo Solstice",
-    category: "Bijou 2-en-1",
-    price: "139 €",
-    gradient: "from-gold-light to-charcoal/40",
+    name: "Cagoule Chaîne Royale",
+    category: "Arbre de Vie",
+    price: "149 €",
+    image: "/images/product-cagoule-royale.jpg",
   },
   {
     id: "p6",
-    name: "Bague Ancrée",
+    name: "Plastron Épaulette",
     category: "Acier Inoxydable",
-    price: "58 €",
-    gradient: "from-charcoal to-gold/30",
+    price: "94 €",
+    image: "/images/product-plastron-epaulette.jpg",
   },
 ];
 
@@ -49,8 +49,11 @@ function ProductCard({ product }) {
   return (
     <article className="group w-[75vw] shrink-0 snap-start sm:w-[46vw] md:w-[30vw] lg:w-[24vw]">
       <div className="relative aspect-[4/5] overflow-hidden rounded-sm bg-sand">
-        <div
-          className={`absolute inset-0 bg-gradient-to-br ${product.gradient} transition-transform duration-500 ease-in-out group-hover:scale-110`}
+        <img
+          src={product.image}
+          alt={product.name}
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
         />
         <div className="absolute inset-0 flex items-end bg-charcoal/0 p-5 transition-all duration-500 ease-in-out group-hover:bg-charcoal/20">
           <span className="translate-y-3 border border-cream/60 bg-cream/0 px-4 py-2 text-[10px] uppercase tracking-widest2 text-cream opacity-0 backdrop-blur-sm transition-all duration-500 ease-in-out group-hover:translate-y-0 group-hover:bg-cream/10 group-hover:opacity-100">
