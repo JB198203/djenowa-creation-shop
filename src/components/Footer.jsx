@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-8 md:items-end">
-            <ul className="flex gap-8">
+            <ul className="flex flex-wrap gap-x-6 gap-y-2 md:justify-end">
               {SOCIALS.map((social) => (
                 <li key={social.label}>
                   <a
