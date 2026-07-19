@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Reveal from "./Reveal.jsx";
 
 const SOCIALS = [
   { label: "Instagram", href: "#" },
@@ -18,8 +19,11 @@ export default function Footer() {
   };
 
   return (
-    <footer id="contact" className="bg-charcoal px-6 py-20 text-cream md:px-12 md:py-28">
-      <div className="mx-auto max-w-7xl">
+    <footer
+      id="contact"
+      className="border-t border-gold/15 bg-black px-6 py-20 text-ivory md:px-12 md:py-28"
+    >
+      <Reveal className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:items-end">
           <div>
             <p className="mb-4 text-xs uppercase tracking-widest2 text-gold">
@@ -33,7 +37,7 @@ export default function Footer() {
 
             <form
               onSubmit={handleSubmit}
-              className="mt-8 flex max-w-md items-end gap-4 border-b border-cream/30 pb-2 transition-colors duration-500 ease-in-out focus-within:border-gold"
+              className="mt-8 flex max-w-md items-end gap-4 border-b border-gold/30 pb-2 transition-colors duration-500 ease-in-out focus-within:border-gold"
             >
               <input
                 type="email"
@@ -41,11 +45,11 @@ export default function Footer() {
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
                 placeholder="Votre adresse e-mail"
-                className="w-full bg-transparent py-2 text-sm text-cream placeholder:text-cream/40 focus:outline-none"
+                className="w-full bg-transparent py-2 text-sm text-ivory placeholder:text-ivory/30 focus:outline-none"
               />
               <button
                 type="submit"
-                className="shrink-0 text-xs uppercase tracking-widest2 text-cream/70 transition-all duration-500 ease-in-out hover:text-gold"
+                className="shrink-0 text-xs uppercase tracking-widest2 text-ivory/60 transition-all duration-500 ease-in-out hover:text-gold"
               >
                 S'abonner
               </button>
@@ -63,7 +67,7 @@ export default function Footer() {
                 <li key={social.label}>
                   <a
                     href={social.href}
-                    className="text-sm uppercase tracking-widest2 text-cream/70 transition-colors duration-500 ease-in-out hover:text-gold"
+                    className="text-sm uppercase tracking-widest2 text-ivory/60 transition-colors duration-500 ease-in-out hover:text-gold"
                   >
                     {social.label}
                   </a>
@@ -72,20 +76,20 @@ export default function Footer() {
             </ul>
             <a
               href="mailto:contact@djenowa-creations.com"
-              className="text-sm text-cream/70 transition-colors duration-500 ease-in-out hover:text-gold"
+              className="text-sm text-ivory/60 transition-colors duration-500 ease-in-out hover:text-gold"
             >
               contact@djenowa-creations.com
             </a>
           </div>
         </div>
 
-        <div className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-cream/10 pt-8 text-xs text-cream/40 md:flex-row">
+        <div className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-gold/10 pt-8 text-xs text-ivory/30 md:flex-row">
           <p>&copy; {new Date().getFullYear()} Djenowa Créations. Tous droits réservés.</p>
-          <p className="font-display italic text-cream/60">
+          <p className="font-display italic text-ivory/50">
             L'Art du Bijou Singulier
           </p>
         </div>
-      </div>
+      </Reveal>
     </footer>
   );
 }

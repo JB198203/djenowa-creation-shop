@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import Reveal from "./Reveal.jsx";
 
 const PRODUCTS = [
   {
@@ -48,15 +49,16 @@ const PRODUCTS = [
 function ProductCard({ product }) {
   return (
     <article className="group w-[75vw] shrink-0 snap-start sm:w-[46vw] md:w-[30vw] lg:w-[24vw]">
-      <div className="relative aspect-[4/5] overflow-hidden rounded-sm bg-sand">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-sm border border-gold/0 bg-ink-soft transition-colors duration-500 ease-in-out group-hover:border-gold/30">
         <img
           src={product.image}
           alt={product.name}
           loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
         />
-        <div className="absolute inset-0 flex items-end bg-charcoal/0 p-5 transition-all duration-500 ease-in-out group-hover:bg-charcoal/20">
-          <span className="translate-y-3 border border-cream/60 bg-cream/0 px-4 py-2 text-[10px] uppercase tracking-widest2 text-cream opacity-0 backdrop-blur-sm transition-all duration-500 ease-in-out group-hover:translate-y-0 group-hover:bg-cream/10 group-hover:opacity-100">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 transition-all duration-500 ease-in-out group-hover:from-black/80" />
+        <div className="absolute inset-0 flex items-end p-5">
+          <span className="translate-y-3 border border-gold/60 bg-black/20 px-4 py-2 text-[10px] uppercase tracking-widest2 text-gold opacity-0 backdrop-blur-sm transition-all duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
             Voir la pièce
           </span>
         </div>
@@ -67,11 +69,11 @@ function ProductCard({ product }) {
           <p className="text-[10px] uppercase tracking-widest2 text-gold">
             {product.category}
           </p>
-          <h3 className="mt-1 font-display text-lg text-charcoal">
+          <h3 className="mt-1 font-display text-lg text-ivory">
             {product.name}
           </h3>
         </div>
-        <p className="whitespace-nowrap text-sm text-charcoal/70">
+        <p className="whitespace-nowrap text-sm text-ivory/50">
           {product.price}
         </p>
       </div>
@@ -87,14 +89,14 @@ export default function ProductCarousel() {
   };
 
   return (
-    <section id="collections" className="bg-sand px-6 py-24 md:px-12 md:py-32">
+    <section id="collections" className="bg-ink-soft px-6 py-24 md:px-12 md:py-32">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
+        <Reveal className="mb-12 flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-xl">
             <p className="mb-4 text-xs uppercase tracking-widest2 text-gold">
               Collection
             </p>
-            <h2 className="font-display text-3xl text-charcoal md:text-5xl">
+            <h2 className="font-display text-3xl text-ivory md:text-5xl">
               Pièces phares
             </h2>
           </div>
@@ -103,7 +105,7 @@ export default function ProductCarousel() {
             <button
               type="button"
               onClick={() => scrollBy(-360)}
-              className="flex h-11 w-11 items-center justify-center border border-charcoal/20 text-charcoal transition-all duration-500 ease-in-out hover:border-gold hover:text-gold"
+              className="flex h-11 w-11 items-center justify-center border border-gold/30 text-ivory/70 transition-all duration-500 ease-in-out hover:border-gold hover:bg-gold hover:text-ink"
               aria-label="Précédent"
             >
               ←
@@ -111,13 +113,13 @@ export default function ProductCarousel() {
             <button
               type="button"
               onClick={() => scrollBy(360)}
-              className="flex h-11 w-11 items-center justify-center border border-charcoal/20 text-charcoal transition-all duration-500 ease-in-out hover:border-gold hover:text-gold"
+              className="flex h-11 w-11 items-center justify-center border border-gold/30 text-ivory/70 transition-all duration-500 ease-in-out hover:border-gold hover:bg-gold hover:text-ink"
               aria-label="Suivant"
             >
               →
             </button>
           </div>
-        </div>
+        </Reveal>
 
         <div
           ref={scrollerRef}
