@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const LINKS = [
-  { href: "#collections", label: "Collections" },
-  { href: "#univers", label: "L'Univers" },
-  { href: "#atelier", label: "L'Atelier" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#collections", label: "Collections" },
+  { href: "/#univers", label: "L'Univers" },
+  { href: "/#atelier", label: "L'Atelier" },
+  { href: "/histoire", label: "Notre Histoire" },
 ];
 
 export default function Navbar() {
@@ -35,13 +36,13 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 md:px-12">
-        <a
-          href="#accueil"
+        <Link
+          to="/"
           className="font-display text-xl tracking-wide text-ivory"
           onClick={closeMenu}
         >
           Djenowa <span className="text-gold">Créations</span>
-        </a>
+        </Link>
 
         <ul className="hidden items-center gap-8 lg:flex">
           {LINKS.map((link) => (
@@ -57,7 +58,7 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="#collections"
+          href="/#collections"
           className="hidden bg-gold px-6 py-2.5 text-xs uppercase tracking-widest2 text-ink transition-all duration-500 ease-in-out hover:bg-gold-light lg:inline-block"
         >
           Découvrir
@@ -107,7 +108,7 @@ export default function Navbar() {
           ))}
           <li className="pt-3">
             <a
-              href="#collections"
+              href="/#collections"
               onClick={closeMenu}
               className="block w-fit bg-gold px-6 py-3 text-xs uppercase tracking-widest2 text-ink transition-all duration-500 ease-in-out hover:bg-gold-light"
             >
