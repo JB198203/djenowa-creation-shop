@@ -2,9 +2,13 @@ import Reveal from "./Reveal.jsx";
 
 const IMAGES = [
   { src: "/images/product-bracelet-lave.jpg", alt: "Détail bracelet en pierre de lave et cauri" },
+  { src: "/images/ambiance-portrait-epingles.jpg", alt: "Portrait éditorial, chaîne et perles" },
   { src: "/images/product-masque-chaine.jpg", alt: "Chaîne portée en accessoire de visage" },
+  { src: "/images/ambiance-scene-concert.jpg", alt: "Djenowa Créations porté sur scène" },
   { src: "/images/product-diademe-frontal.jpg", alt: "Diadème frontal doré, ambiance dorée" },
+  { src: "/images/ambiance-portrait-peinture.jpg", alt: "Portrait éditorial, chaînes dorées superposées" },
   { src: "/images/product-cagoule-royale.jpg", alt: "Cagoule de chaînes dorées et noires" },
+  { src: "/images/ambiance-masque-chaine-or.jpg", alt: "Masque de chaînes dorées" },
   { src: "/images/product-plastron-epaulette.jpg", alt: "Plastron d'épaule porté en tenue de ville" },
 ];
 
