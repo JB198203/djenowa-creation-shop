@@ -18,6 +18,10 @@ const IMAGES = [
   { src: "/images/atelier-runway-plumes.jpg", alt: "Djenowa Créations sur le podium — défilé de mode" },
   { src: "/images/atelier-runway-tulle.jpg", alt: "Défilé Djenowa Créations — pièce portée en podium" },
   { src: "/images/atelier-portrait.jpg", alt: "Portrait éditorial Djenowa Créations" },
+  { src: "/images/ambiance-streetwear-duo.jpg", alt: "Pièces patchwork Djenowa Créations, denim et broderies" },
+  { src: "/images/ambiance-streetwear-epaule.jpg", alt: "Création streetwear Djenowa, maille et denim déchiré" },
+  { src: "/images/ambiance-streetwear-cuissardes.jpg", alt: "Défilé, blazer et cuissardes denim brodées de chaînes" },
+  { src: "/images/ambiance-streetwear-veste.jpg", alt: "Veste patchwork Djenowa Créations, imprimé graphique" },
 ];
 
 export default function AmbianceGallery() {
