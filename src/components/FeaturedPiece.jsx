@@ -4,10 +4,10 @@ export default function FeaturedPiece() {
   return (
     <section id="collections" className="bg-ink-soft">
       <div className="mx-auto grid max-w-7xl grid-cols-1 md:grid-cols-2">
-        <Reveal className="relative aspect-[4/5] overflow-hidden md:aspect-auto">
+        <Reveal className="relative aspect-[4/5] overflow-hidden bg-ivory md:aspect-auto">
           <img
-            src="/images/product-epaulette-cascade.jpg"
-            alt="Épaulette Cascade — chaînes en acier drapées des épaules au buste"
+            src="/images/ambiance-tete-chaine-argent.jpg"
+            alt="Coiffe Chaînée — voile de chaînes argentées porté sur le front"
             loading="lazy"
             className="h-full w-full object-cover"
           />
@@ -22,13 +22,13 @@ export default function FeaturedPiece() {
             Pièce signature
           </p>
           <h2 className="font-display text-3xl text-ivory md:text-5xl">
-            Épaulette Cascade
+            Coiffe Chaînée
           </h2>
           <p className="mt-6 max-w-md text-base leading-relaxed text-ivory/60">
-            Une cascade de chaînes en acier, drapée des épaules jusqu'au
-            buste. Portée en parure d'épaule ou dépliée en collier long,
-            c'est la pièce qui résume le mieux l'esprit Djenowa : sculpturale,
-            transformable, intemporelle.
+            Un voile de chaînes fines qui encadre le visage comme une
+            couronne. Portée en coiffe pour une occasion, ou déclinée en
+            collier au quotidien — la pièce qui incarne le mieux la
+            transformation, signature de la maison.
           </p>
 
           <div className="mt-8 flex items-center gap-3">

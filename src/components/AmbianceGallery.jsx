@@ -11,15 +11,13 @@ const IMAGES = [
   { src: "/images/ambiance-masque-chaine-or.jpg", alt: "Masque de chaînes dorées" },
   { src: "/images/product-plastron-epaulette.jpg", alt: "Plastron d'épaule porté en tenue de ville" },
   { src: "/images/ambiance-runway-denim.jpg", alt: "Défilé Djenowa Créations, look denim et franges" },
-  { src: "/images/ambiance-mannequin-cauris.jpg", alt: "Harnais de perles et cauris sur buste" },
-  { src: "/images/ambiance-portrait-plumes-or.jpg", alt: "Portrait éditorial, chaînes dorées et plumes" },
-  { src: "/images/ambiance-tete-chaine-argent.jpg", alt: "Coiffe de chaînes argentées" },
-  { src: "/images/ambiance-couple-blanc.jpg", alt: "Couple en tenue blanche, épaulette de chaînes" },
   { src: "/images/ambiance-defile-robe-verte.jpg", alt: "Défilé, robe imprimée et coiffe dorée" },
   { src: "/images/ambiance-homme-plumes.jpg", alt: "Défilé, cape de plumes et colliers superposés" },
   { src: "/images/ambiance-defile-epingles.jpg", alt: "Défilé, béret à épingles et boucles d'oreilles chaîne" },
   { src: "/images/ambiance-homme-perles.jpg", alt: "Défilé, colliers de perles en bois superposés" },
-  { src: "/images/ambiance-mannequin-atelier.jpg", alt: "Pièce d'atelier sur buste, perles et cauris" },
+  { src: "/images/atelier-runway-plumes.jpg", alt: "Djenowa Créations sur le podium — défilé de mode" },
+  { src: "/images/atelier-runway-tulle.jpg", alt: "Défilé Djenowa Créations — pièce portée en podium" },
+  { src: "/images/atelier-portrait.jpg", alt: "Portrait éditorial Djenowa Créations" },
 ];
 
 export default function AmbianceGallery() {

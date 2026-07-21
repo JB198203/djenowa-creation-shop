@@ -64,9 +64,9 @@ export default function Hero() {
 
       <div className="relative h-[55vh] md:h-auto">
         <img
-          src="/images/hero-editorial.jpg"
-          alt="Bijou Djenowa Créations — harnais d'épaule et collier en acier, porté"
-          className="h-full w-full object-cover object-top"
+          src="/images/hero-plumes-or.jpg"
+          alt="Bijou Djenowa Créations — épaulette de chaînes dorées, portée"
+          className="h-full w-full object-cover object-[center_20%]"
         />
         <div
           className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent md:bg-gradient-to-r md:from-ink/60 md:via-transparent md:to-black/20"

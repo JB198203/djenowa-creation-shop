@@ -8,24 +8,24 @@ export default function AboutSplit() {
         <Reveal className="relative order-2 grid min-h-[420px] grid-cols-2 gap-4 p-6 md:order-1 md:min-h-[640px] md:p-12">
           <div className="col-span-2 overflow-hidden rounded-sm border border-gold/20">
             <img
-              src="/images/atelier-runway-plumes.jpg"
-              alt="Djenowa Créations sur le podium — défilé de mode"
+              src="/images/ambiance-couple-blanc.jpg"
+              alt="Couple en tenue blanche, épaulette de chaînes Djenowa Créations"
               loading="lazy"
               className="h-full w-full object-cover transition-transform duration-500 ease-in-out hover:scale-105"
             />
           </div>
           <div className="overflow-hidden rounded-sm border border-gold/20">
             <img
-              src="/images/atelier-runway-tulle.jpg"
-              alt="Défilé Djenowa Créations — pièce portée en podium"
+              src="/images/ambiance-mannequin-atelier.jpg"
+              alt="Pièce d'atelier — parure de perles et cauris sur buste"
               loading="lazy"
               className="h-full w-full object-cover transition-transform duration-500 ease-in-out hover:scale-105"
             />
           </div>
           <div className="overflow-hidden rounded-sm border border-gold/20">
             <img
-              src="/images/atelier-portrait.jpg"
-              alt="Portrait éditorial Djenowa Créations"
+              src="/images/ambiance-mannequin-cauris.jpg"
+              alt="Harnais de perles et cauris fait main, en atelier"
               loading="lazy"
               className="h-full w-full object-cover transition-transform duration-500 ease-in-out hover:scale-105"
             />
