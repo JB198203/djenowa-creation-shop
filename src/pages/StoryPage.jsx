@@ -7,7 +7,7 @@ const CHAPTERS = [
     title: "Les Racines",
     image: "/images/bento-arbre.jpg",
     paragraphs: [
-      "Avant d'être une marque, Djenowa est une mémoire. Celle des bijoux que l'on portait pour dire qui l'on était — une lignée, un passage, une appartenance. Grandir entouré de ces parures, c'est apprendre très tôt qu'un bijou n'est jamais seulement décoratif : il parle.",
+      "Avant d'être une marque, Djenowa est une mémoire. Celle des bijoux et des vêtements que l'on portait pour dire qui l'on était — une lignée, un passage, une appartenance. Grandir entouré de ces parures, c'est apprendre très tôt qu'une pièce n'est jamais seulement décorative : elle parle.",
       "Chaque création de la maison part de là — d'un motif entrevu, d'un geste transmis, d'une silhouette gravée dans la mémoire bien avant d'être dessinée sur le papier.",
     ],
   },
@@ -16,8 +16,8 @@ const CHAPTERS = [
     title: "La Matière",
     image: "/images/bento-acier.jpg",
     paragraphs: [
-      "L'acier inoxydable n'a rien d'un choix par défaut. C'est une prise de position : celle d'un luxe qui résiste au temps, à l'eau, à la vie telle qu'on la vit vraiment — sans jamais s'écailler, sans jamais ternir.",
-      "Sous les doigts de l'atelier, ce métal froid devient souple : maillon après maillon, il se drape, se plie, épouse une clavicule ou un poignet comme s'il avait toujours été fait pour ça.",
+      "L'acier inoxydable, le denim, le cuir : rien n'est choisi par défaut. C'est une prise de position — celle d'un luxe qui résiste au temps, à l'eau, à la vie telle qu'on la vit vraiment, sans jamais s'écailler, sans jamais se démoder.",
+      "Sous les doigts de l'atelier, ces matières brutes deviennent souples : maillon après maillon, patch après patch, elles se drapent, se plient, épousent un poignet ou une épaule comme si elles avaient toujours été faites pour ça.",
     ],
   },
   {
@@ -25,8 +25,8 @@ const CHAPTERS = [
     title: "Le Symbole",
     image: "/images/product-diademe-frontal.jpg",
     paragraphs: [
-      "L'Arbre de Vie revient dans chaque collection comme une signature discrète. Ses racines ancrées, ses branches ouvertes : une manière de dire que l'on peut être à la fois fidèle à d'où l'on vient et tourné vers ce que l'on devient.",
-      "Gravé pièce par pièce, jamais tout à fait identique d'un bijou à l'autre, ce motif rappelle qu'aucune histoire ne se répète — elle se prolonge.",
+      "L'Arbre de Vie revient dans chaque collection comme une signature discrète — gravé sur un bijou, brodé sur une pièce patchwork. Ses racines ancrées, ses branches ouvertes : une manière de dire que l'on peut être à la fois fidèle à d'où l'on vient et tourné vers ce que l'on devient.",
+      "Jamais tout à fait identique d'une pièce à l'autre, ce motif rappelle qu'aucune histoire ne se répète — elle se prolonge.",
     ],
   },
   {
@@ -122,8 +122,8 @@ export default function StoryPage() {
       <Reveal className="bg-ink-soft px-6 py-24 text-center md:py-32">
         <p className="mx-auto max-w-3xl font-display text-2xl italic leading-snug text-ivory sm:text-3xl md:text-4xl">
           <span className="text-gold-gradient">« </span>
-          Un bijou Djenowa ne se porte pas seulement sur la peau — il se
-          porte comme on porte une histoire qu'on continue d'écrire.
+          Une création Djenowa ne se porte pas seulement sur la peau — elle
+          se porte comme on porte une histoire qu'on continue d'écrire.
           <span className="text-gold-gradient"> »</span>
         </p>
       </Reveal>

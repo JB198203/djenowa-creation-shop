@@ -41,10 +41,10 @@ export default function AboutSplit() {
             Un savoir-faire pensé pour durer
           </h2>
           <p className="mt-6 max-w-md text-base leading-relaxed text-ivory/60">
-            Chez Djenowa Créations, chaque bijou est dessiné puis façonné à la
-            main en petites séries. L'acier inoxydable est choisi pour sa
-            résistance et sa douceur sur la peau, tandis que chaque gravure
-            de l'Arbre de Vie est réalisée pièce par pièce.
+            Chez Djenowa Créations, chaque pièce — bijou, vêtement ou
+            accessoire — est dessinée puis façonnée à la main en petites
+            séries. Acier inoxydable, denim, cuir et chaînes composent une
+            même écriture, portée par les mêmes gestes d'atelier.
           </p>
           <p className="mt-4 max-w-md text-base leading-relaxed text-ivory/60">
             Le résultat : des créations intemporelles, pensées pour être
@@ -54,10 +54,10 @@ export default function AboutSplit() {
           <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gold/20 pt-8">
             <div>
               <dt className="text-xs uppercase tracking-widest2 text-ivory/40">
-                Matière
+                Matières
               </dt>
               <dd className="mt-2 font-display text-xl text-ivory">
-                Acier 316L
+                Acier, denim, cuir
               </dd>
             </div>
             <div>

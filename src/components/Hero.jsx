@@ -19,20 +19,20 @@ export default function Hero() {
 
       <div className="relative z-10 flex flex-col justify-center px-6 pt-32 pb-16 md:px-12 lg:px-20 md:py-24">
         <p className="mb-6 text-xs uppercase tracking-widest2 text-gold">
-          Bijoux artisanaux — Édition singulière
+          Bijoux — Vêtements — Accessoires
         </p>
 
         <h1 className="font-display text-4xl leading-[1.1] text-ivory sm:text-5xl lg:text-6xl">
           Djenowa Créations
           <span className="text-gold-gradient mt-2 block italic">
-            L'Art du Bijou Singulier
+            L'Art de la Création Singulière
           </span>
         </h1>
 
         <p className="mt-8 max-w-md text-balance text-base leading-relaxed text-ivory/60 md:text-lg">
-          Des pièces façonnées en acier inoxydable, pensées pour durer et se
-          transformer. Chaque bijou 2-en-1 s'adapte à votre allure —
-          du collier à la boucle d'oreille — en un seul geste.
+          Bijoux en acier inoxydable, pièces patchwork en denim et cuir,
+          accessoires ornés de chaînes — chaque création est façonnée à la
+          main et pensée pour durer et se transformer avec vous.
         </p>
 
         <div className="mt-12 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
