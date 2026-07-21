@@ -1,4 +1,5 @@
 import Reveal from "../components/Reveal.jsx";
+import CurtainReveal from "../components/CurtainReveal.jsx";
 
 const CHAPTERS = [
   {
@@ -81,6 +82,7 @@ export default function StoryPage() {
   return (
     <div className="bg-ink">
       {/* Opening */}
+      <CurtainReveal>
       <section className="relative flex min-h-[70vh] w-full items-end overflow-hidden md:min-h-screen">
         <img
           src="/images/atelier-runway-plumes.jpg"
@@ -107,6 +109,7 @@ export default function StoryPage() {
           </p>
         </div>
       </section>
+      </CurtainReveal>
 
       {/* Chapters */}
       <div className="divide-y divide-gold/10">

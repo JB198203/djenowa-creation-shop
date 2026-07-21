@@ -1,5 +1,8 @@
+import CurtainReveal from "./CurtainReveal.jsx";
+
 export default function Hero() {
   return (
+    <CurtainReveal>
     <section
       id="accueil"
       className="relative grid min-h-screen w-full grid-cols-1 overflow-hidden bg-ink md:grid-cols-2"
@@ -75,5 +78,6 @@ export default function Hero() {
         />
       </div>
     </section>
+    </CurtainReveal>
   );
 }
