@@ -10,6 +10,7 @@ const IMAGES = [
   { src: "/images/product-cagoule-royale.jpg", alt: "Cagoule de chaînes dorées et noires" },
   { src: "/images/ambiance-masque-chaine-or.jpg", alt: "Masque de chaînes dorées" },
   { src: "/images/product-plastron-epaulette.jpg", alt: "Plastron d'épaule porté en tenue de ville" },
+  { src: "/images/ambiance-runway-denim.jpg", alt: "Défilé Djenowa Créations, look denim et franges" },
 ];
 
 export default function AmbianceGallery() {
