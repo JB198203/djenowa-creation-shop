@@ -86,7 +86,7 @@ export default function Footer() {
         <div className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-gold/10 pt-8 text-xs text-ivory/30 md:flex-row">
           <p>&copy; {new Date().getFullYear()} Djenowa Créations. Tous droits réservés.</p>
           <p className="font-display italic text-ivory/50">
-            L'Art du Bijou Singulier
+            L'Art de la Création Singulière
           </p>
         </div>
       </Reveal>

@@ -10,6 +10,18 @@ const IMAGES = [
   { src: "/images/product-cagoule-royale.jpg", alt: "Cagoule de chaînes dorées et noires" },
   { src: "/images/ambiance-masque-chaine-or.jpg", alt: "Masque de chaînes dorées" },
   { src: "/images/product-plastron-epaulette.jpg", alt: "Plastron d'épaule porté en tenue de ville" },
+  { src: "/images/ambiance-runway-denim.jpg", alt: "Défilé Djenowa Créations, look denim et franges" },
+  { src: "/images/ambiance-defile-robe-verte.jpg", alt: "Défilé, robe imprimée et coiffe dorée" },
+  { src: "/images/ambiance-homme-plumes.jpg", alt: "Défilé, cape de plumes et colliers superposés" },
+  { src: "/images/ambiance-defile-epingles.jpg", alt: "Défilé, béret à épingles et boucles d'oreilles chaîne" },
+  { src: "/images/ambiance-homme-perles.jpg", alt: "Défilé, colliers de perles en bois superposés" },
+  { src: "/images/atelier-runway-plumes.jpg", alt: "Djenowa Créations sur le podium — défilé de mode" },
+  { src: "/images/atelier-runway-tulle.jpg", alt: "Défilé Djenowa Créations — pièce portée en podium" },
+  { src: "/images/atelier-portrait.jpg", alt: "Portrait éditorial Djenowa Créations" },
+  { src: "/images/ambiance-streetwear-duo.jpg", alt: "Pièces patchwork Djenowa Créations, denim et broderies" },
+  { src: "/images/ambiance-streetwear-epaule.jpg", alt: "Création streetwear Djenowa, maille et denim déchiré" },
+  { src: "/images/ambiance-streetwear-cuissardes.jpg", alt: "Défilé, blazer et cuissardes denim brodées de chaînes" },
+  { src: "/images/ambiance-streetwear-veste.jpg", alt: "Veste patchwork Djenowa Créations, imprimé graphique" },
 ];
 
 export default function AmbianceGallery() {

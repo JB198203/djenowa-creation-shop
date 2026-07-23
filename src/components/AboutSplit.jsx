@@ -8,24 +8,24 @@ export default function AboutSplit() {
         <Reveal className="relative order-2 grid min-h-[420px] grid-cols-2 gap-4 p-6 md:order-1 md:min-h-[640px] md:p-12">
           <div className="col-span-2 overflow-hidden rounded-sm border border-gold/20">
             <img
-              src="/images/atelier-runway-plumes.jpg"
-              alt="Djenowa Créations sur le podium — défilé de mode"
+              src="/images/ambiance-couple-blanc.jpg"
+              alt="Couple en tenue blanche, épaulette de chaînes Djenowa Créations"
               loading="lazy"
               className="h-full w-full object-cover transition-transform duration-500 ease-in-out hover:scale-105"
             />
           </div>
           <div className="overflow-hidden rounded-sm border border-gold/20">
             <img
-              src="/images/atelier-runway-tulle.jpg"
-              alt="Défilé Djenowa Créations — pièce portée en podium"
+              src="/images/ambiance-mannequin-atelier.jpg"
+              alt="Pièce d'atelier — parure de perles et cauris sur buste"
               loading="lazy"
               className="h-full w-full object-cover transition-transform duration-500 ease-in-out hover:scale-105"
             />
           </div>
           <div className="overflow-hidden rounded-sm border border-gold/20">
             <img
-              src="/images/atelier-portrait.jpg"
-              alt="Portrait éditorial Djenowa Créations"
+              src="/images/ambiance-mannequin-cauris.jpg"
+              alt="Harnais de perles et cauris fait main, en atelier"
               loading="lazy"
               className="h-full w-full object-cover transition-transform duration-500 ease-in-out hover:scale-105"
             />
@@ -41,10 +41,10 @@ export default function AboutSplit() {
             Un savoir-faire pensé pour durer
           </h2>
           <p className="mt-6 max-w-md text-base leading-relaxed text-ivory/60">
-            Chez Djenowa Créations, chaque bijou est dessiné puis façonné à la
-            main en petites séries. L'acier inoxydable est choisi pour sa
-            résistance et sa douceur sur la peau, tandis que chaque gravure
-            de l'Arbre de Vie est réalisée pièce par pièce.
+            Chez Djenowa Créations, chaque pièce — bijou, vêtement ou
+            accessoire — est dessinée puis façonnée à la main en petites
+            séries. Acier inoxydable, denim, cuir et chaînes composent une
+            même écriture, portée par les mêmes gestes d'atelier.
           </p>
           <p className="mt-4 max-w-md text-base leading-relaxed text-ivory/60">
             Le résultat : des créations intemporelles, pensées pour être
@@ -54,10 +54,10 @@ export default function AboutSplit() {
           <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gold/20 pt-8">
             <div>
               <dt className="text-xs uppercase tracking-widest2 text-ivory/40">
-                Matière
+                Matières
               </dt>
               <dd className="mt-2 font-display text-xl text-ivory">
-                Acier 316L
+                Acier, denim, cuir
               </dd>
             </div>
             <div>
